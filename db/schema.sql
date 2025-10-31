@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS employees;
 
--- TO DO
+-- TODO: create "employees" table
 
 CREATE TABLE employees (
     id serial PRIMARY KEY,
