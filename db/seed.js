@@ -3,7 +3,7 @@ import db from "#db/client";
 import { faker } from "@faker-js/faker";
 
 //TODO: import createEmployee from /queries/employees
-import { createEmployee } from "./queries/employees";
+import { createEmployee } from "./queries/employees.js";
 
 await db.connect();
 await seedEmployees();
@@ -20,4 +20,6 @@ async function seedEmployees() {
     };
     await createEmployee(employee);
   }
+  // const { rows } = await db.query("SELECT * from employees");
+  // console.log(rows);
 }
